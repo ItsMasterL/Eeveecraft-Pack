@@ -11,14 +11,14 @@ jobs:
         - uses: actions/checkout@v4
 
         - name: Create zip
-        run: |
-          zip -r EeveecraftPvP.zip ./*
+          run: |
+            zip -r EeveecraftPvP.zip ./*
 
         - name: Create / update release
-        uses: softprops/action-gh-release@v1
-        with:
-          tag_name: latest
-          name: Latest
-          files: EeveecraftPvP.zip
-        env:
+          uses: softprops/action-gh-release@v1
+          with:
+            tag_name: latest
+            name: Latest
+            files: EeveecraftPvP.zip
+          env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
