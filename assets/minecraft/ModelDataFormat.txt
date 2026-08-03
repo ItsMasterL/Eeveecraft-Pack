@@ -1,0 +1,18 @@
+10*** = Confirmation
+11*** = PvP (110** = item, 111** = armor)
+12**## = Sploon (## - color id)
+
+Sploon color IDs
+-----
+00 - blue
+01 - brown
+02 - cyan
+03 - green
+04 - light blue
+05 - lime
+06 - magenta
+07 - orange
+08 - pink 
+09 - purple
+10 - red
+11 - yellow

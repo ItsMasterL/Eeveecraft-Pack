@@ -1,0 +1,69 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "pvp:item/pvp/items/gauntlet_space",
+		"particle": "pvp:item/pvp/items/gauntlet"
+	},
+	"elements": [
+		{
+			"from": [5, 0, 5],
+			"to": [10, 15, 10],
+			"faces": {
+				"north": {"uv": [0, 0, 2, 6], "texture": "#0"},
+				"east": {"uv": [6, 0, 8, 6], "texture": "#0"},
+				"south": {"uv": [4, 0, 6, 6], "texture": "#0"},
+				"west": {"uv": [2, 0, 4, 6], "texture": "#0"},
+				"up": {"uv": [6, 8, 4, 6], "texture": "#0"},
+				"down": {"uv": [2, 8, 4, 6], "rotation": 90, "texture": "#0"}
+			}
+		},
+		{
+			"from": [4.8, -0.2, 4.8],
+			"to": [10.2, 16.2, 10.2],
+			"faces": {
+				"north": {"uv": [8, 0, 10, 6], "texture": "#0"},
+				"east": {"uv": [14, 0, 16, 6], "texture": "#0"},
+				"south": {"uv": [12, 0, 14, 6], "texture": "#0"},
+				"west": {"uv": [10, 0, 12, 6], "texture": "#0"},
+				"up": {"uv": [14.5, 8, 12.5, 6], "texture": "#0"},
+				"down": {"uv": [10.5, 8, 12.5, 6], "rotation": 90, "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [90, 0, 0],
+			"translation": [0.5, -2.5, 7.75],
+			"scale": [0.89, 1, 0.92]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [90, 0, 0],
+			"translation": [-0.25, -2.5, 7.75],
+			"scale": [0.89, 1, 0.92]
+		},
+		"firstperson_righthand": {
+			"rotation": [138, -19, 18],
+			"translation": [1, -4.25, -1.25],
+			"scale": [0.85, 1, 0.88]
+		},
+		"firstperson_lefthand": {
+			"rotation": [138, -19, 18],
+			"translation": [1, -4.25, -1.25],
+			"scale": [0.85, 1, 0.88]
+		},
+		"ground": {
+			"rotation": [0, 0, 90],
+			"translation": [-3.75, 0, 0]
+		},
+		"gui": {
+			"rotation": [24, -150, -145],
+			"translation": [-3, -5, 0],
+			"scale": [1.3, 1.3, 1.3]
+		},
+		"fixed": {
+			"translation": [0, 4.75, -0.75]
+		}
+	}
+}

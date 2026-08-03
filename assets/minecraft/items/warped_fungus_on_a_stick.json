@@ -1,0 +1,266 @@
+{
+  "model": {
+    "type": "range_dispatch",
+    "property": "custom_model_data",
+    "fallback": {
+      "type": "model",
+      "model": "minecraft:item/warped_fungus_on_a_stick"
+    },
+    "entries": [
+      {
+        "threshold": 11001,
+        "model": {
+          "type": "model",
+          "model": "pvp:item/blue"
+        }
+      },
+      {
+        "threshold": 11002,
+        "model": {
+          "type": "model",
+          "model": "pvp:item/green"
+        }
+      },
+      {
+        "threshold": 11003,
+        "model": {
+          "type": "model",
+          "model": "pvp:item/lightblue"
+        }
+      },
+      {
+        "threshold": 11004,
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": "gui",
+              "model": {
+                "type": "minecraft:model",
+                "model": "pvp:item/mind"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:condition",
+            "property": "minecraft:keybind_down",
+            "keybind": "key.use",
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "pvp:item/gauntlet_mind"
+            },
+            "on_false": {
+              "type": "minecraft:model",
+              "model": "pvp:item/gauntlet"
+            }
+          }
+        }
+      },
+      {
+        "threshold": 11005,
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": "gui",
+              "model": {
+                "type": "minecraft:model",
+                "model": "pvp:item/power"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:condition",
+            "property": "minecraft:keybind_down",
+            "keybind": "key.use",
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "pvp:item/gauntlet_power"
+            },
+            "on_false": {
+              "type": "minecraft:model",
+              "model": "pvp:item/gauntlet"
+            }
+          }
+        }
+      },
+      {
+        "threshold": 11006,
+        "model": {
+          "type": "model",
+          "model": "pvp:item/purple"
+        }
+      },
+      {
+        "threshold": 11007,
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": "gui",
+              "model": {
+                "type": "minecraft:model",
+                "model": "pvp:item/reality"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:condition",
+            "property": "minecraft:keybind_down",
+            "keybind": "key.use",
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "pvp:item/gauntlet_reality"
+            },
+            "on_false": {
+              "type": "minecraft:model",
+              "model": "pvp:item/gauntlet"
+            }
+          }
+        }
+      },
+      {
+        "threshold": 11008,
+        "model": {
+          "type": "model",
+          "model": "pvp:item/red"
+        }
+      },
+      {
+        "threshold": 11009,
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": "gui",
+              "model": {
+                "type": "minecraft:model",
+                "model": "pvp:item/soul"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:condition",
+            "property": "minecraft:keybind_down",
+            "keybind": "key.use",
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "pvp:item/gauntlet_soul"
+            },
+            "on_false": {
+              "type": "minecraft:model",
+              "model": "pvp:item/gauntlet"
+            }
+          }
+        }
+      },
+      {
+        "threshold": 11010,
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": "gui",
+              "model": {
+                "type": "minecraft:model",
+                "model": "pvp:item/space"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:condition",
+            "property": "minecraft:keybind_down",
+            "keybind": "key.use",
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "pvp:item/gauntlet_space"
+            },
+            "on_false": {
+              "type": "minecraft:model",
+              "model": "pvp:item/gauntlet"
+            }
+          }
+        }
+      },
+      {
+        "threshold": 11011,
+        "model": {
+          "type": "model",
+          "model": "pvp:item/supershadow"
+        }
+      },
+      {
+        "threshold": 11012,
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": "gui",
+              "model": {
+                "type": "minecraft:model",
+                "model": "pvp:item/time"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:condition",
+            "property": "minecraft:keybind_down",
+            "keybind": "key.use",
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "pvp:item/gauntlet_time"
+            },
+            "on_false": {
+              "type": "minecraft:model",
+              "model": "pvp:item/gauntlet"
+            }
+          }
+        }
+      },
+      {
+        "threshold": 11013,
+        "model": {
+          "type": "model",
+          "model": "pvp:item/vanish"
+        }
+      },
+      {
+        "threshold": 11014,
+        "model": {
+          "type": "model",
+          "model": "pvp:item/white"
+        }
+      },
+      {
+        "threshold": 11015,
+        "model": {
+          "type": "model",
+          "model": "pvp:item/yellow"
+        }
+      },
+	  {
+		"threshold": 11016,
+		"model": {
+        "type": "minecraft:condition",
+        "property": "minecraft:keybind_down",
+        "keybind": "key.use",
+        "on_true": {
+          "type": "minecraft:model",
+          "model": "pvp:item/gauntlet_all"
+        },
+        "on_false": {
+          "type": "minecraft:model",
+          "model": "pvp:item/gauntlet"
+        }
+      }
+	  }
+    ]
+  },
+  "hand_animation_on_swap": false
+}

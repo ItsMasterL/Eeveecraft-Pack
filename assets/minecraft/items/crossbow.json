@@ -1,0 +1,138 @@
+{
+  "model": {
+    "type": "minecraft:range_dispatch",
+    "entries": [
+      {
+        "threshold": 11010,
+        "model": {
+          "type": "minecraft:select",
+          "property": "minecraft:display_context",
+          "cases": [
+            {
+              "when": "thirdperson_righthand",
+              "model": {
+                "type": "minecraft:model",
+                "model": "pvp:item/chaingun_model"
+              }
+            },
+            {
+              "when": "gui",
+              "model": {
+                "type": "minecraft:model",
+                "model": "pvp:item/chaingun_model"
+              }
+            },
+            {
+              "when": "thirdperson_lefthand",
+              "model": {
+                "type": "minecraft:model",
+                "model": "pvp:item/chaingun_model"
+              }
+            },
+            {
+              "when": "ground",
+              "model": {
+                "type": "minecraft:model",
+                "model": "pvp:item/chaingun_model"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:condition",
+            "property": "minecraft:keybind_down",
+            "keybind": "key.use",
+            "on_true": {
+              "type": "minecraft:model",
+              "model": "pvp:item/chaingun_firing"
+            },
+            "on_false": {
+              "type": "minecraft:model",
+              "model": "pvp:item/chaingun"
+            }
+          }
+        }
+      },
+      {
+        "threshold": 11011,
+        "model": {
+          "type": "minecraft:model",
+          "model": "pvp:item/assaultrifle"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:condition",
+      "on_false": {
+        "type": "minecraft:range_dispatch",
+        "property": "minecraft:custom_model_data",
+        "entries": [
+          {
+            "threshold": 11010,
+            "model": {
+              "type": "minecraft:model",
+              "model": "pvp:item/chaingun"
+            }
+          },
+          {
+            "threshold": 11011,
+            "model": {
+              "type": "minecraft:model",
+              "model": "pvp:item/assaultrifle"
+            }
+          }
+        ],
+        "fallback": {
+          "type": "minecraft:select",
+          "property": "minecraft:charge_type",
+          "cases": [
+            {
+              "when": "arrow",
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/crossbow_arrow"
+              }
+            },
+            {
+              "when": "rocket",
+              "model": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/crossbow_firework"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/crossbow"
+          }
+        }
+      },
+      "on_true": {
+        "type": "minecraft:range_dispatch",
+        "entries": [
+          {
+            "model": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/crossbow_pulling_1"
+            },
+            "threshold": 0.58
+          },
+          {
+            "model": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/crossbow_pulling_2"
+            },
+            "threshold": 1
+          }
+        ],
+        "fallback": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/crossbow_pulling_0"
+        },
+        "property": "minecraft:crossbow/pull"
+      },
+      "property": "minecraft:using_item"
+    },
+    "property": "minecraft:custom_model_data"
+  },
+  "hand_animation_on_swap": false
+}

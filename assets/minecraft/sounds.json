@@ -1,0 +1,3 @@
+{ 
+ "entity.player.breath": { "category": "player", "sounds": [""], "replace": true}
+}

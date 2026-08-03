@@ -1,0 +1,19 @@
+ {
+    "model": {
+        "type": "range_dispatch",
+        "property": "custom_model_data",
+        "fallback": {
+            "type": "model",
+            "model": "minecraft:item/chest_minecart"
+        },
+        "entries": [
+            {
+                "threshold": 11001,
+                "model": {
+                    "type": "model",
+                    "model": "pvp:item/hungergames/restock"
+                }
+            }
+        ]
+    }
+}

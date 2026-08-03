@@ -1,0 +1,40 @@
+{
+    "model": {
+        "type": "range_dispatch",
+        "property": "custom_model_data",
+        "fallback": {
+            "type": "model",
+            "model": "minecraft:item/barrier"
+        },
+        "entries": [
+            {
+                "threshold": 10100,
+                "model": {
+                    "type": "model",
+                    "model": "pvp:item/barrier/confirm"
+                }
+            },
+            {
+                "threshold": 10101,
+                "model": {
+                    "type": "model",
+                    "model": "pvp:item/barrier/barrier"
+                }
+            },
+            {
+                "threshold": 10115,
+                "model": {
+                    "type": "model",
+                    "model": "pvp:item/barrier/confirmver"
+                }
+            },
+            {
+                "threshold": 10116,
+                "model": {
+                    "type": "model",
+                    "model": "pvp:item/barrier/barrier"
+                }
+            }
+        ]
+    }
+}
